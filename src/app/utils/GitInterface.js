@@ -1,4 +1,4 @@
-// /src/utils/gitInterface.js
+
 import simpleGit from 'simple-git';
 
 const git = simpleGit();

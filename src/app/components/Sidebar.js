@@ -1,4 +1,4 @@
-'use client'; // Add this directive at the top of the file
+'use client';
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -12,7 +12,6 @@ const Sidebar = () => {
 
   return (
     <>
-      {/* Hamburger Button */}
       <button
         onClick={toggleSidebar}
         className="fixed top-4 left-4 z-50 flex flex-col items-center justify-center space-y-1 bg-white p-2 rounded-md shadow-md"
@@ -28,15 +27,13 @@ const Sidebar = () => {
         />
       </button>
 
-      {/* Sidebar */}
       <div
         className={`fixed top-0 left-0 h-full bg-gray-800 text-white p-6 transition-transform duration-300 ease-in-out ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
         style={{ width: '250px', zIndex: 40 }}
       >
-        {/* Sidebar links */}
-        <ul className="mt-16"> {/* Added margin-top to move links below the hamburger */}
+        <ul className="mt-16">
           <li className="mb-4">
             <Link href="/" className="block text-black font-bold bg-white hover:bg-gray-200 p-2 rounded-md">
               Home
